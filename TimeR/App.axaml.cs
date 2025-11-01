@@ -4,6 +4,7 @@ using Avalonia.Data.Core;
 using Avalonia.Data.Core.Plugins;
 using System.Linq;
 using Avalonia.Markup.Xaml;
+using OnePointUI.Avalonia.Style.Core;
 using TimeR.ViewModels;
 using TimeR.Views;
 
@@ -13,6 +14,7 @@ public partial class App : Application
 {
     public override void Initialize()
     {
+        ThemeManager.Initialize(this);
         AvaloniaXamlLoader.Load(this);
     }
 
